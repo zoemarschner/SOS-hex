@@ -4,7 +4,7 @@ Saves a mesh object to a .vtk file, and optionally also saves the jacobians as a
 	file_name		the file to write to
 	save_jacobians	optional, a boolean flag that determines whether the jacobians should be saved (default false)
 	jacobian_file	optional, specifies the file to save the jacobians to (default <file_name>_jacobians.csv)
-					it's not recommended to set this, as it'll make loading the csvs slightly more difficult
+					it's not recommended to set this, the default should be fine in most cases.
 %}
 function save_vtk(mesh, file_name, save_jacobians, jacobian_file)
 	if nargin < 4
