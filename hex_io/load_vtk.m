@@ -36,8 +36,7 @@ function mesh = load_vtk(file_name, jacobian_file)
 	fclose(file);
 
 	try 
-		jacobians = readmatrix(jacobian_file);
-		mesh.jacobians = jacobians(:, 1);
+		mesh.jacobians = readmatrix(jacobian_file);
 	catch
 		disp("Jacobians were not loaded (Try computing them with calc_mesh_jacobains).");
 	end

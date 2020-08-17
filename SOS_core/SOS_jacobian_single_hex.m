@@ -9,7 +9,6 @@ returns:
 	argmin		the location in parameter space ([0,1]^3) at which J occurs
 	second_eig	the second Eigenvalue of the moment matrix, a measure of exact recovery
 %}
-
 function [J, argmin, second_eig] = SOS_jacobian_single_hex(V, k)
 	if nargin < 2 k = 4; end
 
