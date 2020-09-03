@@ -37,7 +37,7 @@ function plot_hex_interior(V, res, camera, color_map, pt_size, arg_min)
 	if nargin == 6
 		[X, Y, Z] = sphere();
 		r = 0.03;
-		pt = symbolic_trilinear_map(V, arg_min)
+		pt = symbolic_trilinear_map(V, arg_min);
 		surf(r .* X + pt(1), r .* Y + pt(2), r .* Z + pt(3), 'FaceColor', 'red', 'EdgeColor', 'none')
 	end
 end

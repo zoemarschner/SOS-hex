@@ -3,7 +3,7 @@ Creates a model that can be used to solve the SOS problem on many hexes (removes
 It returns a function that acts just like SOS_jacobian_single_hex, but is much faster.
 	k			optional, the degree of the SOS relaxation (default 4)
 returns:
-	model		a function which takes V as an input and returns the lower bound of the jacobian determinant, the argmin,
+	model		a function which takes V as an input and returns the lower bound of the Jacobian determinant, the argmin,
 				and the second eigenvalue
 %}
 
@@ -15,7 +15,7 @@ function model = SOS_jacobian_batch_model(k)
 
 	% set up model
 	vars = [u, v, w];
-	J = a(1) + v.*a(4) + v.^2.*a(7) + a(9).*u + v.*a(12).*u + v.^2.*a(15).*u + a(17).*u.^2 + v.*a(19).*u.^2 + a(2).*w + v.*a(5).*w + v.^2.*a(8).*w +  a(10).*u.*w + v.*a(13).*u.*w + v.^2.*a(16).*u.*w + a(18).*u.^2.*w + v.*a(20).*u.^2.*w + a(3).*w.^2 + v.*a(6).*w.^2 + a(11).*u.*w.^2 + v.*a(14).*u.*w.^2
+	J = a(1) + v.*a(4) + v.^2.*a(7) + a(9).*u + v.*a(12).*u + v.^2.*a(15).*u + a(17).*u.^2 + v.*a(19).*u.^2 + a(2).*w + v.*a(5).*w + v.^2.*a(8).*w +  a(10).*u.*w + v.*a(13).*u.*w + v.^2.*a(16).*u.*w + a(18).*u.^2.*w + v.*a(20).*u.^2.*w + a(3).*w.^2 + v.*a(6).*w.^2 + a(11).*u.*w.^2 + v.*a(14).*u.*w.^2;
 
 	[s1, s1_c] = polynomial(vars, k);
 	[s2, s2_c] = polynomial(vars, k);

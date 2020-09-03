@@ -52,8 +52,7 @@ function new_mesh = repair_mesh(mesh, rho, verbose)
 
 				while low_value < 0
 					invalid = true;
-					V = projection_model([cur_vertices; min_point'])
-					cur_vertices = V;
+					cur_vertices = projection_model([cur_vertices; min_point']);
 	
 					[low_value, min_point] = opt_point_model(cur_vertices);
 				end
@@ -107,8 +106,8 @@ function model = create_projection_model()
 
 	V = sdpvar(8, 3);
 	J = symbolic_jacobian_det(V, [u,v,w]);
-	F = [J >= 0]
+	F = [J >= 0];
 
-	Objective = sum((V(:)-cur(:)).^2)
-	model = optimizer(F, Objective, [], [cur; u, v, w], V)
+	Objective = sum((V(:)-cur(:)).^2);
+	model = optimizer(F, Objective, [], [cur; u, v, w], V);
 end
