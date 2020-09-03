@@ -3,14 +3,14 @@
 
 Source code for the paper ["Hexahedral Mesh Repair via SOS Relaxation"](http://people.csail.mit.edu/jsolomon/assets/sos_hex.pdf) by Zoë Marschner, David Palmer, Paul Zhang, and Justin Solomon from Symposium on Geometry Processing 2020.
 
-> 1. [Installation](#installation)
->  * [Dependencies](#dependencies)
-> 2. [Examples](#examples)
->  * [Validity of a Single Hex](#validity-of-a-single-hex)
->  * [Validity of a Mesh from a .vtk File](#validity-of-a-mesh-from-a-vtk-file)
->  * [Validity of Subset Mesh Hexes](#validity-of-subset-mesh-hexes)
->  * [Repairing a Mesh](#repairing-a-mesh)
-> 3. [Credits](#credits)
+> - [Installation](#installation)
+>   * [Dependencies](#dependencies)
+> - [Examples](#examples)
+>   * [Validity of a Single Hex](#validity-of-a-single-hex)
+>   * [Validity of a Mesh from a .vtk File](#validity-of-a-mesh-from-a-vtk-file)
+>   * [Validity of Subset of Mesh Hexes](#validity-of-subset-of-mesh-hexes)
+>   * [Repairing a Mesh](#repairing-a-mesh)
+> - [Credits](#credits)
 
 ## Installation
 Clone this repository and then run the following commands in matlab
