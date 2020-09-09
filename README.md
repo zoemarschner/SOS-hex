@@ -1,7 +1,7 @@
 ![splash image](.demo_images/splash.png)
 # SOS-hex: Hexahedral Quality and Repair with Sum-of-Squares
 
-Source code for the paper ["Hexahedral Mesh Repair via SOS Relaxation"](http://people.csail.mit.edu/jsolomon/assets/sos_hex.pdf) by Zoë Marschner, David Palmer, Paul Zhang, and Justin Solomon from Symposium on Geometry Processing 2020.
+Source code for the paper ["Hexahedral Mesh Repair via SOS Relaxation"](http://people.csail.mit.edu/jsolomon/assets/sos_hex.pdf) by Zoë Marschner, David Palmer, Paul Zhang, and Justin Solomon from Symposium on Geometry Processing 2020. A video talk for this paper presented at SGP can be found [here](https://www.youtube.com/watch?v=xEMRLEEbGGc).
 
 > - [Installation](#installation)
 >   * [Dependencies](#dependencies)
